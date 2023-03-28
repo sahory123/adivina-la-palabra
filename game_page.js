@@ -3,6 +3,8 @@ player2_name = localStorage.getItem("player2_name");
 
 player1_score = 0;
 player2_score = 0;
+question_turn = "player1";
+answer_turn = "player2";
 
 document.getElementById("player1_name").innerHTML = player1_name +" : ";
 document.getElementById("player2_name").innerHTML = player2_name +" : ";
@@ -22,8 +24,8 @@ function send(){
     console.log(charAt1);
 
     length_divide_2 =Math.floor(word.lenght/2);
-    charAt2 = word.charAt(length_divide/2);
-    console.log(charAt);
+    charAt2 = word.charAt(length_divide_2/2);
+    console.log(charAt2);
 
     length_minus_1 =word.lenght - 1;
     charAt3 = word.charAt(length_minus_1);
